@@ -71,6 +71,15 @@
                 color: $white-color;
                 $font-size: 1.3em;
                 text-decoration: none;
+                display: flex;
+                line-height:$font-size;
+
+                .sub-icon{
+                    position: absolute;
+                    line-height: .9em;
+                    font-size: .9em;
+                    right: 10px;
+                }
 
                 i {
                     padding-right: 10px;
