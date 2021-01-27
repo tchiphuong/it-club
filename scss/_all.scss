@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: 'Comfortaa', cursive;
 }
 
 li {
@@ -11,6 +12,26 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.__img {
+    object-fit: cover;
+}
+
+.__b_radius{
+    border-radius: 100%;
+}
+
+.__btn {
+    background: $primary-color;
+    color: $white-color;
+    border-radius: 6px;
+}
+.__btn:hover {
+    background: $primary-color;
+    color: $white-color;
+    border-radius: 6px;
+    opacity: .8;
 }
 
 .button {
