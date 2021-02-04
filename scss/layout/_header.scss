@@ -132,6 +132,7 @@
     box-shadow: 0px 2px 5px #aaaaaa;
     z-index: 99;
     color: $primary-color;
+    font-weight: 600;
 
     .header__logo {
         $margin_top: 18px;
@@ -163,6 +164,7 @@
 
                 i {
                     padding-right: 6px;
+                    font-weight: 600;
                 }
 
                 a {
@@ -186,11 +188,13 @@
                     from {
                         top: 0vh;
                         opacity: 0;
+                        z-index: 0;
                     }
                 
                     to {
                         top: $header-height;
                         opacity: 1;
+                        z-index: 86;
                     }
                 }
 
@@ -288,7 +292,7 @@
 
     .header__login {
         text-align: right;
-        padding: 0 $header-padding;
+        padding-right: $header-padding;
         display: flex;
         a {
             color: $primary-color;
@@ -296,33 +300,31 @@
         }
 
         .noty {
+            font-size: 1.2em;
             height: 40px;
             width: 40px;
             position: relative;
-            border: 1px solid $primary-color;
             border-radius: 100%;
-            margin: 10px;
+            margin: 10px 5px 10px 0px;
             line-height: 40px;
-            padding: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            background: $primary-color;
-            color: #fff;
+            color: $primary-color;
 
 
             .noty__total {
                 background: red;
                 position: absolute;
-                top: -6px;
-                right: -6px;
-                font-size: 13px;
+                top: 2px;
+                right: 0px;
                 line-height: 20px;
-                height: 20px;
-                width: 20px;
+                height: 16px;
+                width: 16px;
                 font-weight: 600;
-                border-radius: 100%;
+                font-size: 11px;
+                border-radius: 5px;
                 color: #fff;
             }
         }
