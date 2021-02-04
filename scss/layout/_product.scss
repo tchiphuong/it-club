@@ -1,0 +1,117 @@
+.product {
+    color: #000;
+    .product__link {
+        a {
+            color: #000;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+    }
+    .product__caption {
+        border-bottom: 2px solid $primary-color;
+        font-size: 2em;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #000;
+        margin-top: 10px;
+    }
+    .product__image {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        margin: 10px 0;
+    }
+
+    .product__name {
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .product__price {
+        font-weight: bold;
+        font-size: 1.8em;
+        color: red;
+    }
+    .product__desc {
+        text-align: justify;
+    }
+
+    .product__btn {
+        padding: 15px;
+        .btn {
+            text-align: left;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 30px;
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                margin-right: 20px;
+            }
+        }
+
+        .btn:hover {
+            background: $primary-color;
+            transition: all 0.5s;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}
+
+.recomment {
+    color: #000;
+    margin-bottom: 20px;
+    .recomment__caption {
+        border-bottom: 2px solid $primary-color;
+        font-size: 2em;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #000;
+        margin-top: 50px;
+    }
+    .recomment__item{
+        text-decoration: none;
+        color: #000;
+        margin-top: 20px;
+    }
+    .recomment__item:hover {
+        transform: scale(1.02);
+        transition: all 0.5s;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+        opacity: 0.8;
+    }
+
+    .recomment__image {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        margin: 10px 0;
+    }
+    .recomment__name {
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .recomment__price {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: red;
+        padding-bottom: 10px;
+    }
+}
+
+.product_footer{
+    background: $primary-color;
+    text-align: center;
+    height: 100px;
+    line-height:100px;
+    color: #fff;
+}
